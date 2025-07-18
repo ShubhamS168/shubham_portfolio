@@ -3,130 +3,583 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Shubham Sourav | Portfolio</title>
+    <title>Shubham Sourav - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="header-content">
-                <h1>Shubham Sourav</h1>
-                <p>Data Science Engineering Enthusiast</p>
-                <div class="contact-info">
-                    <p>Email: <a href="mailto:shubhamsourav475@gmail.com">shubhamsourav475@gmail.com</a></p>
-                    <p>Phone: +91-9693417779</p>
-                    <div class="social-links">
-                        <a href="https://github.com/ShubhamS168" target="_blank">GitHub</a> |
-                        <a href="https://www.linkedin.com/in/shubham-sourav-460493264" target="_blank">LinkedIn</a> |
-                        <a href="https://x.com/CodeKaroShubham" target="_blank">X</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <h3>Shubham Sourav</h3>
+                </div>
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="typing-animation">Hi, I'm Shubham Sourav</span>
+                    </h1>
+                    <p class="hero-subtitle">Computer Science Engineer | Data Analyst | AI/ML Enthusiast</p>
+                    <p class="hero-tagline">Passionate about transforming data into insights and building intelligent solutions</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn--primary">View My Work</a>
+                        <a href="#contact" class="btn btn--outline">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image">
+                        <div class="image-placeholder">
+                            <img src="images/profile_pic.jpg" alt="Shubham Sourav Profile Picture" class="profile-image">
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-        <nav class="navbar">
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#extracurricular">Extra-Curricular</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <section id="about" class="section">
-            <h2>Career Objective</h2>
-            <p>I am passionate about data science engineering with a focus on Large Language Models (LLMs), machine learning, and data science, aiming to leverage my skills to build impactful solutions.</p>
-        </section>
-
-        <section id="skills" class="section">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div><strong>Languages:</strong> Python, C++, HTML, CSS, JavaScript</div>
-                <div><strong>Technologies:</strong> Machine Learning, LLMs, Langchain, OpenCV</div>
-                <div><strong>Tools:</strong> Tableau, Arduino UNO, Microcontrollers,</div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>Get to know more about my journey and passion</p>
             </div>
-        </section>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate data science engineer with a strong inclination towards Large Language Models (LLMs), data science, and machine learning. Currently pursuing my Bachelor of Engineering, I focus on building innovative solutions that bridge the gap between data and actionable insights.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-robot"></i>
+                            <span>Specialized in LLMs and AI/ML technologies</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Experience with data visualization and analytics</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>Strong foundation in web development</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-trophy"></i>
+                            <span>Active participant in hackathons and competitions</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="2">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">Major Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="2">0</div>
+                        <div class="stat-label">Internships</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="1">0</div>
+                        <div class="stat-label">Hackathon Win</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="interpersonal" class="section">
-            <h2>Interpersonal Skills</h2>
-            <ul>
-                <li>Strong Communication</li>
-                <li>Action-Oriented</li>
-                <li>Team Player</li>
-            </ul>
-        </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <p>Technologies and tools I work with</p>
+            </div>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Science</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Machine Learning</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Tableau</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Dynamic Lane Division, Vehicle Detection, and Counter</h3>
-                <p><strong>Tech Stack:</strong> ML, Python, OpenCV, HTML, CSS, Arduino UNO</p>
-                <p>Adaptive lane optimization system for Karnataka State Police to dynamically adjust lane configurations and optimize traffic flow.</p>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Some of my recent work and achievements</p>
             </div>
 
-            <div class="project-card">
-                <h3>Retail Query Assistant with LLM & Langchain Integration</h3>
-                <p><strong>Tech Stack:</strong> LLMs, Langchain, Blockchain</p>
-                <p>Revolutionized retail operations by integrating LLMs and Langchain for better customer experience and store operations.</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="btn btn--sm btn--primary">View Demo</a>
+                                <a href="#" class="btn btn--sm btn--outline">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Retail Query Assistant With LLM & Langchain</h3>
+                        <p>Revolutionizing retail by integrating LLMs and Langchain blockchain technology for improved communication, streamlined procedures, and secure data transactions.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">LLM</span>
+                            <span class="tech-tag">Langchain</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://rag-qna-chatbot-csi.streamlit.app/" target="_blank" class="btn btn--sm btn--primary">View Demo</a>
+                                <a href="https://github.com/ShubhamS168/RAG-QnA-chatbot" class="btn btn--sm btn--outline">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>RAG QnA Chatbot</h3>
+                        <p>A Retrieval-Augmented Generation (RAG) based chatbot powered by Google Gemini, designed for intelligent Q&A over uploaded documents. The app supports various file formats and provides context-aware responses using the Gemini large language model.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">LLM</span>
+                            <span class="tech-tag">Langchain</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://titanic-survival-prediction-qbqnfwgafy4h6gg8e7diy9.streamlit.app/" class="btn btn--sm btn--primary">View Demo</a>
+                                <a href="https://github.com/ShubhamS168/titanic-survival-prediction" class="btn btn--sm btn--outline">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Titanic Survival Prediction</h3>
+                        <p>This project demonstrates a production-ready machine learning deployment pipeline using Streamlit to predict Titanic passenger survival based on engineered features and optimized models. The app enables real-time predictions, model explanations via SHAP, and intuitive dashboards for users.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">LLM</span>
+                            <span class="tech-tag">Langchain</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://clv-prediction-dashboard.streamlit.app/" class="btn btn--sm btn--primary">View Demo</a>
+                                <a href="https://github.com/ShubhamS168/clv-prediction-dashboard" class="btn btn--sm btn--outline">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Customer Lifetime Value (CLV) Prediction</h3>
+                        <p>A complete end-to-end machine learning and dashboarding solution to predict Customer Lifetime Value (CLV) using the Online Retail Dataset. This solution includes automated data cleaning, feature engineering, multi-model training, and a production-ready Streamlit app with rich UI/UX.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">LLM</span>
+                            <span class="tech-tag">Langchain</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="btn btn--sm btn--primary">View Demo</a>
+                                <a href="#" class="btn btn--sm btn--outline">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Electricity Smart Meter Integration</h3>
+                        <p>Empowering homeowners with real-time energy insights through Flutter app for energy monitoring and appliance control.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Microcontrollers</span>
+                            <span class="tech-tag">Sensors</span>
+                            <span class="tech-tag">Mobile</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="btn btn--sm btn--primary">View Demo</a>
+                                <a href="#" class="btn btn--sm btn--outline">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Data Insights and Visualization Pipeline</h3>
+                        <p>Streamlining data preparation and insights with Python and Tableau for efficient cleaning and preprocessing of raw datasets.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Tableau</span>
+                            <span class="tech-tag">Data Viz</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="project-card">
-                <h3>Electricity Smart Meter Integration for Appliance Management</h3>
-                <p><strong>Tech Stack:</strong> Flutter, Microcontrollers, Sensors</p>
-                <p>Real-time energy monitoring and appliance control through a Flutter app, presented at INSTINCT 3.0 Hackathon.</p>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Professional Experience</h2>
+                <p>My journey in the field of data science and technology</p>
             </div>
-        </section>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Data Science Intern</h3>
+                        <h4>Celebal Technologies</h4>
+                        <span class="timeline-date">2024</span>
+                        <p>Worked on machine learning projects involving classification, regression, clustering, and GenAI. Used Python, Scikit-learn, and Pandas for model building and evaluation.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Data Science Intern</h3>
+                        <h4>NullClass</h4>
+                        <span class="timeline-date">2024</span>
+                        <p>Focused on data cleaning with NumPy and Pandas, and created visualizations in Tableau. Completed Data Insights and Visualization Pipeline project.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Editorial Coordinator</h3>
+                        <h4>IEEE CTSoc Chandigarh University Student Branch</h4>
+                        <span class="timeline-date">2023-24</span>
+                        <p>Led editorial activities and coordinated technical content for the student branch, enhancing communication and knowledge sharing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="education" class="section">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Bachelor of Engineering</strong>, Chandigarh University (2022–2026) - CGPA: 7.54 (till 4th Semester)</li>
-                <li><strong>Intermediate</strong>, De Nobili School, CMRI (2019–2021) - 77.5%</li>
-                <li><strong>Matriculation</strong>, St. Joseph’s School, Jhajha (2019) - 84%</li>
-            </ul>
-        </section>
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2>Education</h2>
+                <p>My academic journey and achievements</p>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>Bachelor of Engineering</h3>
+                        <h4>Chandigarh University</h4>
+                        <p class="education-location">Mohali, India</p>
+                        <p class="education-duration">2022 – 2026</p>
+                        <p class="education-grade">CGPA: 7.72 (till 6th Semester)</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>Intermediate</h3>
+                        <h4>De Nobili School, CMRI</h4>
+                        <p class="education-location">Dhanbad, India</p>
+                        <p class="education-duration">2019 – 2021</p>
+                        <p class="education-grade">Percentage: 77.5%</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>Matriculation</h3>
+                        <h4>St. Joseph's School</h4>
+                        <p class="education-location">Jhajha, India</p>
+                        <p class="education-duration">2019</p>
+                        <p class="education-grade">Percentage: 84%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="achievements">
+                <h3>Achievements & Certifications</h3>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="achievement-info">
+                            <h4>Instinct 3.0 Hackathon Finalist</h4>
+                            <p>Hack2skill - ₹10,000 prize</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="achievement-info">
+                            <h4>Data Science Certification</h4>
+                            <p>Celebal Technologies</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="achievement-info">
+                            <h4>Data Science Certification</h4>
+                            <p>NullClass</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="awards" class="section">
-            <h2>Certifications & Awards</h2>
-            <ul>
-                <li><a href="https://certificate.hack2skill.com/user/INSTINCT-3.0-/2023H2S08INS3-C0016" target="_blank">Finalist, Instinct 3.0 Hackathon</a> - ₹10,000 Prize for Smart Meter project</li>
-                <li><a href="https://drive.google.com/file/d/1larXev7N2_jYnm4i2ywbOYPm29_Jw-s-/view" target="_blank">Emerging Professional</a> -  Chandigarh University</li>
-                <li><a href="https://unstop.com/certificate-preview/4a1a7298-b675-4772-872e-395fe10306b7?utm_campaign=site-emails" target="_blank">HackCOG, Esya '23</a> - IIIT Delhi</li>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Let's connect and discuss opportunities</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>shubhamsourav475@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91-9693417779</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Mohali, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="www.linkedin.com/in/shubham-sourav-460493264" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/ShubhamS168" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            </ul>
-        </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Shubham Sourav. All rights reserved.</p>
+                <p>Built with passion and modern web technologies</p>
+            </div>
+        </div>
+    </footer>
 
-        <section id="extracurricular" class="section">
-            <h2>Extra-Curricular Activities</h2>
-            <ul>
-                <li><a href="https://drive.google.com/file/d/1TlCA9jzW69kWHh8mDW5dw1Kh8lSLYbVR/view" target="_blank">IEEE CTSoc</a> - Editorial Coordinator (2023-24)</li>
-            </ul>
-        </section>
-
-        <section id="languages" class="section">
-            <h2>Languages Known</h2>
-            <ul>
-                <li>Hindi</li>
-                <li>English</li>
-            </ul>
-        </section>
-
-        <section id="hobbies" class="section">
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Reading Books</li>
-                <li>Playing Video Games</li>
-            </ul>
-        </section>
-
-        <footer id="contact">
-            <p>Contact me at <a href="mailto:shubhamsourav475@gmail.com">shubhamsourav475@gmail.com</a></p>
-        </footer>
-    </div>
+    <script src="app.js"></script>
 </body>
 </html>
